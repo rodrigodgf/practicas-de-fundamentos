@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//este ya funciona bien
 float pi=3.14;
 float r1;
 float a1=0;
