@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//este ya sirve bien
 float  c1 ,  c2 , c3 , c4 ;
 float promedio = 0;
 
