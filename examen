@@ -1,0 +1,132 @@
+///////
+
+
+#include <stdio.h>
+
+int main () {
+
+int opcion;
+int i = 10;
+
+printf("elige una opcion de 1 a 4: ");
+scanf("%i", &opcion);
+
+
+
+switch (opcion)
+{
+case 1:
+
+    
+
+        printf ("cuenta regresiva\n");
+       
+        while (i>=0) {
+        
+            printf("%i \n", i );
+            i--;
+        
+        }
+    
+    break;
+
+
+case 2 : 
+
+        printf ("suma y cositas\n");
+
+        
+        int num=0;
+        int suma=0;
+        int promedio=0;
+        int cantidadValores=0;
+       
+       
+       
+        
+        do {
+            printf("introduce un numero: ");
+            scanf ("%i",&num);
+           
+             suma += num;
+            cantidadValores++;
+          
+            promedio = suma / cantidadValores;  
+            
+          
+        }while(num!=0);
+        
+
+    printf("la suma es:%i, la cantidad de valores es: %d, y el promedio es: %i\n", suma , cantidadValores , promedio);
+
+
+case 3: 
+
+        printf ("nombre y asi\n");
+
+
+        char name [20];
+        int boleta; 
+        int edad;
+        int natalicio = 0;
+        printf("introduce tu nombre, boleta, edad: ");
+        scanf("%s" , &name);
+        scanf("%i" ,  &boleta );
+        scanf("%i" ,  &edad);
+        natalicio = 2023 - edad;
+        printf("tu nombre es: %s, tu boleta es: %i, tu edad es: %i, y tu año de nacimiento es: %i", name, boleta, edad, natalicio);
+        
+
+
+
+
+
+break;
+
+
+case 4 :
+
+  printf ("secuencia\n");
+
+     int n , m;
+        int secuencia = 0;
+        
+        printf("introduce dos numeros: ");
+        scanf("%i", &n );
+        scanf("%i", &m);
+        
+
+        do
+        {
+            if (n<m){
+               secuencia = n++ ,  m--;
+                
+               printf (secuencia);
+            }
+        } while (n<m);
+        
+        
+        printf("%i/%i", n , m );
+
+
+
+
+break;
+
+
+
+default:
+    
+printf ("Opcion no valida");
+
+    break;
+}
+
+
+
+
+
+    return 0;
+}
+
+
