@@ -9,22 +9,27 @@
 
 void numerosPares(int arr[], int longitud) {
     printf("Números pares:\n\n");
+      int contadorPares = 0;
 
     for (int i = 1; i < longitud; i++) {
         if (arr[i] % 2 == 0) {
             printf("%d\n", arr[i]);
+            contadorPares++;
         }
     }
+       printf("Total de números pares: %d\n", contadorPares);
 }
 
 void numerosImpares(int arr[], int longitud) {
     printf("Números impares:\n\n");
-
+    int contadorImpares = 0;
     for (int i = 0; i < longitud; i++) {
         if (arr[i] % 2 != 0) {
             printf("%d\n", arr[i]);
+            contadorImpares++;
         }
     }
+    printf("Total de números impares: %d\n", contadorImpares);
 }
 
 
